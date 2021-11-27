@@ -22,7 +22,7 @@
            !== Diferente e do mesmo tipo
            */
  
-           /*Operador Unário
+           /*Operador Ternarios
            */
            $a = 3;
            $b = 15;

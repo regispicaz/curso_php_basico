@@ -9,7 +9,7 @@
 <div>
     <?php
        $cnt = ($_GET["num"])?$_GET["num"]:0;
-       while ($cnt >= 10){
+       while ($cnt <= 20){
          
          $cnt++;
          echo "$cnt";

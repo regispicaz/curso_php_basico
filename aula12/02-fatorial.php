@@ -13,23 +13,16 @@
         echo "Calculando o fatorial de $v_fat</br>";
 
         //Lógica para calculo Fatorial
-        do{
-
-        }while();
-
-
-        
-        /*
-        $v = isset($_GET["val"])?$_GET["val"]:1;
-        echo "<h1>Calculando o fatorial de $v </h1>";
-        $c = $v;
+        $c = $v_fat;
         $fat = 1;
+
         do {
             $fat = $fat * $c;
             $c--;
-        } while ($c >= 1);
-        echo "<h2>$v ! = $fat";
-        */
+
+        }while($c >=1);
+        echo "$v_fat ! = $fat";
+
     ?>
     <input type="button" class='botao' value="Voltar" onclick="window.history.go(-1)">
 </div>

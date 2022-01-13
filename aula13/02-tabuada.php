@@ -7,14 +7,15 @@
 </head>
 <body>
 <div>
+    <h3>Tabuado</h3>
     <?php
-       $n = isset($_GET["num"])?$_GET["num"]:1;
-       for ($c=1; $c<=10; $c++) {
-           $r = $n * $c;
-           echo "$n x $c = $r <br/>";
+       $n = isset($_GET['num'])?($_GET['num']):'1';
+       for($cnt=1; $cnt<=10; $cnt++){
+         $res = $n * $cnt;
+         echo "$n X $cnt = $res </br>";
        }
     ?>
-    <br/><a href="javascript:history.go(-1)">Voltar</a>
+    <input type="button" class="botao" value="voltar" onclick="window.history.go(-1)">
 </div>
 </body>
 </html>

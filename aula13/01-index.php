@@ -8,21 +8,25 @@
 <body>
 <div>
     <?php
-        for ($i = 1; $i <= 10; $i++) {
-            echo "$i ";
-        }
-        echo "<br/>";
-        for ($i = 10; $i >= 1; $i--) {
-            echo "$i ";
-        }
-        echo "<br/>";
-        for ($i = 0; $i <= 50; $i+=5) {
-            echo "$i ";
-        }
-        echo "<br/>";
-        for ($i=20; $i>=0; $i-=2) {
-            print "$i ";
-        }
+        //Contador
+       for($cnt=1;$cnt<=10;$cnt++){
+           echo"$cnt | ";
+       }
+       echo "</br>";
+       for($cnt=10; $cnt>=1;$cnt--){
+           echo"$cnt | ";
+       }
+       echo "</br>";
+       for($cnt=0;$cnt<=50;$cnt+='5'){
+           echo"$cnt | ";
+       }
+       echo "</br>";
+       for($cnt=20;$cnt>=0;$cnt-='2'){
+           echo"$cnt | ";
+       }
+
+
+
     ?>
 </div>
 </body>

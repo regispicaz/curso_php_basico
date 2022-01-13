@@ -12,14 +12,19 @@
 <body>
 <div>
     <?php
-      $n = ($_GET["num"])?($_GET["num"]):'1';
-      echo $n;
-      for($cnt=$n; $cnt<$n; $cnt++){
-        if ($n % $cnt=='0'){
-          echo "$n Não é Primo";
-        } else{
-          echo "$n é primo";
+      $n = isset($_GET["num"])?($_GET["num"]):'1';
+      $mult = 0;
+      for($cnt=1; $cnt<=$n; $cnt++){
+        if ($n%$cnt==0){
+          $mult++;
+          echo "$cnt ";
         }
+        
+      }
+      if($mult<=2){
+        echo "é primo<br/>";
+      } else{
+        echo "Não é primo <br/>";
       }
     ?>
 	<br/>
